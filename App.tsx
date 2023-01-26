@@ -1,22 +1,5 @@
-import {ScrollView, StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import {SvgImages} from './src/assets';
-import MainTemplate from './src/components/templates/MainTemplate';
+import AppNavigator from './src/navigator/AppNavigator';
 
-const App = () => {
-  return (
-    <ScrollView>
-      <MainTemplate>
-        <Text>App</Text>
-        <SvgImages.Img1 />
-        <SvgImages.Img2 />
-        <SvgImages.Img3 />
-        <SvgImages.Img4 />
-      </MainTemplate>
-    </ScrollView>
-  );
-};
-
+const App = () => <AppNavigator />;
 export default App;
-
-const styles = StyleSheet.create({});
